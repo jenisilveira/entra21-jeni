@@ -1,0 +1,61 @@
+1) Qual é a saída dos seguintes comandos
+console.log(!10) // ? false
+console.log(!!"String") // ? true
+console.log(!!2.3) // ? true
+console.log(Boolean(null)) // ? false
+
+2) Qual é a saída das seguintes instruções
+console.log(10 > 2) // ? true
+console.log(5 >= "5") // ? true
+console.log(5 >== "5") // ? Uncaught SyntaxError: Unexpected token '='
+console.log("apple" > "pineapple") false
+console.log("2" > "12") true
+console.log(undefined == null) true
+console.log(undefined === null) false
+console.log(null == "\n0\n") false
+console.log(null === +"\n0\n") false
+
+
+3)
+let numero = prompt("Digite um número: ")
+     if (numero > 10) {
+        console.log("O valor digitado é maior que 10!");
+    } else
+        console.log("O valor digitado é menor que 10!")    
+     {
+         }
+
+
+4) 
+let n1 = prompt("Digite um número:")
+          
+          if(n1%2 == 0){
+              console.log(`Entrada: ${n1} \nSaída: ${n1/2} \nPrograma finalizado.`);
+           }else{
+              console.log(`Entrada: ${n1}  \nSaída: Programa finalizado.`);
+          }
+
+
+5)
+let numero1 = prompt("Digite um numero:")
+
+        if (numero1%2 == 0) {
+        console.log(`Entrada:${numero1} \nSaída: O número é par!`)
+            } else {
+        console.log(`Entrada:${numero1} \nSaída: O número é ímpar!`);
+             }
+
+
+6)     
+let numero1 = prompt("Digite um número:")
+    
+
+    if (numero1 >= 20 && numero1 < 90) {
+        console.log(`Entrada: ${numero1} \nSaída: O número está na faixa entre 20 e 90`);
+    } else {
+         console.log(`Entrada: ${numero1} \nSaída: O número está fora da faixa`);
+        }
+
+
+
+

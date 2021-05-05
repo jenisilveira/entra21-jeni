@@ -1,0 +1,20 @@
+1 criar repo no github nome entra21-jeni-taina
+	git clone url
+
+2 clonar o repositorio para a area de trabalho
+	git clone url
+3 modificar as conf credenciais so win
+
+4 cogit nfigurar nome e email no repositorio
+	git config --local user.name 'nome'
+	git config --local user.email'email'	
+5 adicionar um primeiro.html -> commitar e fazer push
+	git add
+	git commit -m 'mensagem'
+	git push
+
+6 adicionar o arquivo segundo.html
+
+7 alterar o arquivo primeiro.html -> adicionar a estrutura do HTML
+
+8 commitar essas alterações e fazer push

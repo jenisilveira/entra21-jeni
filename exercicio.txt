@@ -17,7 +17,7 @@ console.log(null === +"\n0\n") false
 
 
 3)
-let numero = prompt("Digite um número: ")
+let numero = Number(prompt("Digite um número:"))
      if (numero > 10) {
         console.log("O valor digitado é maior que 10!");
     } else
@@ -27,9 +27,9 @@ let numero = prompt("Digite um número: ")
 
 
 4) 
-let n1 = prompt("Digite um número:")
+let n1 = Number(prompt("Digite um número:"))
           
-          if(n1%2 == 0){
+          if(n1 % 2 === 0){
               console.log(`Entrada: ${n1} \nSaída: ${n1/2} \nPrograma finalizado.`);
            }else{
               console.log(`Entrada: ${n1}  \nSaída: Programa finalizado.`);
@@ -37,17 +37,17 @@ let n1 = prompt("Digite um número:")
 
 
 5)
-let numero1 = prompt("Digite um numero:")
+let numero = Number(prompt("Digite um numero:"))
 
-        if (numero1%2 == 0) {
-        console.log(`Entrada:${numero1} \nSaída: O número é par!`)
+        if (numero % 2 === 0) {
+        console.log(`Entrada:${numero} \nSaída: O número é par!`)
             } else {
-        console.log(`Entrada:${numero1} \nSaída: O número é ímpar!`);
+        console.log(`Entrada:${numero} \nSaída: O número é ímpar!`);
              }
 
 
 6)     
-let numero1 = prompt("Digite um número:")
+let numero1 = Number(prompt("Digite um número:"))
     
 
     if (numero1 >= 20 && numero1 <= 90) {
@@ -64,9 +64,9 @@ let numero1 = prompt("Digite um número:")
     false
 
 8)
-let a = prompt("Digite o primeiro número:")
-let b = prompt("Digite o segundo número:")
-let c = prompt("Digite o terceiro número:")
+let a = Number(prompt("Digite o primeiro número:"))
+let b = Number(prompt("Digite o segundo número:"))
+let c = Number(prompt("Digite o terceiro número:"))
 
 if (a > b) {
             console.log(`O maior número é o ${a}`)
@@ -76,7 +76,11 @@ if (a > b) {
             console.log(`O maior número é o ${c}`)
         }
 
-9)
+9)      let a = 2
+        let b = 1
+        let resultado
+a + b < 4 ? resultado = "Abaixo" : resultado = "Acima" 
+console. log(resultado)
 
 10)
 let lado1 = Number(prompt("Informe o lado do triangulo:"))
@@ -90,4 +94,185 @@ let lado3 = Number(prompt("Informe o terceiro lado do triangulo"))
    }else{
        console.log("Triangulo Escaleno");
    }
+
+11) 
+let numero = Number(prompt("Digite um número:"))
+
+if (numero >= 0) {
+    console.log(`A raiz quadrada é ${Math.sqrt(numero)}`)
+} else {
+    console.log("O número é invalido");
+}
+
+
+12)
+let numero = Number(prompt("Digite um número:"))
+
+if (numero % 5 == 0) {
+    console.log("O número é divisivel por 5")
+} else {
+    console.log("O número não é divisivel por 5");
+}
+
+13) 
+let numero = Number(prompt("Digite um número:"))
+
+
+if (numero >= 0) {
+    console.log(`A raiz quadrada é ${Math.sqrt(numero)}`)
+} else {
+    console.log(`O número ao quadrado é ${numero*numero}`);
+}
+
+
+14)
+let salario = Number(prompt("Informe o salario do funcionário:"))
+let valorPrestacao = Number(prompt("Informe o valor da prestação do emprestimo"))
+
+if (valorPrestacao > salario * 0.2) {
+    console.log("Emprestimo não concedido")
+} else {
+    console.log("Emprestimo concedido");
+}
+
+15)
+let time1 = Number(prompt("Informe o placar do Gremio"))
+let time2 = Number(prompt("Informe o placar do Internacional"))
+
+if (time1 > time2) {
+    console.log("A vitoria é do Gremio!")
+} else if (time1 === time2) {
+    console.log("Empate");
+}else{
+    console.log("A vitoria é do Inter!");
+
+}
+
+16)
+let idade = Number(prompt("Informe a sua idade:"))
+
+if (idade < 18) {
+    console.log("Voto não obrigatorio")
+} else if (idade >= 18 && idade <= 60) {
+    console.log("Voto obrigatorio");
+}else{
+    console.log("Voto opcional");
+
+}
+
+17)     
+
+
+
+18)
+let numero = Number(prompt("Digite um número:"))
+
+switch (numero) {
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda - feira");
+        break;
+    case 3: 
+        console.log("Terça - feira");
+        break;
+    case 4: 
+        console.log("Quarta - feira");  
+        break
+    case 5: 
+        console.log("Quinta - feira");  
+        break
+    case 6: 
+        console.log("Sexta - feira");  
+        break
+    case 7: 
+        console.log("Sabado");  
+        break
     
+    default:
+        console.log("Número invalido");
+    break
+}   
+
+19)
+
+
+20)
+let numero = Number(prompt("Digite um número:"))
+
+switch (numero) {
+    case 1:
+        console.log("Janeiro");
+        break;
+    case 2:
+        console.log("Fevereiro");
+        break;
+    case 3: 
+        console.log("Março");
+        break;
+    case 4: 
+        console.log("Abril");  
+        break
+    case 5: 
+        console.log("Maio");  
+        break
+    case 6: 
+        console.log("Junho");  
+        break
+    case 7: 
+        console.log("Julho");  
+        break
+    
+    case 8:
+        console.log("Agosto");
+
+    case 9:
+        console.log("Setembro");
+
+    case 10:
+        console.log("Outubro");
+
+    case 11:
+        console.log("Novembro");
+
+    case 12:
+        console.log("Dezembro");
+    default:
+        console.log("Número invalido");
+    break
+}  
+
+21)
+let turno = prompt("Em qual turno você estuda?\nDigite: \nM - matutino\nV - Vespertino\nN - Noturno")
+
+switch (turno) {
+    case "M":
+        console.log("Bom Dia!");
+        break;
+    
+    case "V":
+        console.log("Boa Tarde!");
+        break;
+    
+    case "N":
+        console.log("Boa Noite!");
+        break;
+    case "m":
+        console.log("Bom Dia!");
+        break;
+    
+    case "v":
+        console.log("Boa Tarde!");
+        break;
+    
+    case "n":
+        console.log("Boa Noite!");
+        break;
+
+    default:
+        console.log("Valor Inválido!");
+        break;
+}
+
+

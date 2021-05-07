@@ -49,7 +49,7 @@ let numero = Number(prompt("Digite um numero:"))
 let numero1 = Number(prompt("Digite um número:"))
     
 
-    if (numero1 >= 20 && numero1 <= 90) {
+    if (numero1 > 20 && numero1 < 90) {
         console.log(`Entrada: ${numero1} \nSaída: O número está na faixa entre 20 e 90`);
     } else {
          console.log(`Entrada: ${numero1} \nSaída: O número está fora da faixa`);

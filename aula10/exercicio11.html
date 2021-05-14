@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//11)
+let fora = 0
+let dentro = 0
+
+while (true) {
+    let numero = Number(prompt("Digite um numero"))
+
+    if (numero < 0) {
+        break
+    } 
+
+    numero >= 10 && numero <= 20 ? dentro++ : fora++                        
+}
+
+console.log(`${dentro} número(s) estão no intervalo`)
+console.log(`${fora} número(s) estão fora do intervalo`)
+
+
+    </script>
+</body>
+</html>

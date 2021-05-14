@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//20)
+let menorNumero = Number(prompt("O menor número"))
+let maiorNumero = Number(prompt("Digite o maior número"))
+let somaPar = 0
+let multiplicaImpar = 1
+
+for (let i = menorNumero; i <= maiorNumero; i++) {            
+    i % 2 == 0 ? somaPar += i : multiplicaImpar *= i
+}
+console.log(`Soma dos pares: ${somaPar}\nMultiplição dos Impares: ${multiplicaImpar}`)
+
+
+    </script>
+</body>
+</html>

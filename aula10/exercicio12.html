@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//12)
+let valores = 0
+let quantidade = 0
+while (true) {
+    let numero = Number(prompt("digite o numero"))
+    
+    if (numero < 0){
+        break
+    } 
+
+    valores += numero
+    quantidade++     
+} 
+
+let media = valores / quantidade
+console.log(`Média: ${media.toFixed(2)}.`)
+
+
+    </script>
+</body>
+</html>

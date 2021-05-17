@@ -8,6 +8,98 @@
 <body>
     <script>
 
+//1
+numeros = new Array(10)
+    for(let i = 0;i < numeros.length;i++){
+        numeros[i]=Number(prompt("Digite um Número"))
+    if((numeros[i]%2)===0){
+        console.log(numeros[i]+" ")
+    }
+
+}
+
+//2
+
+let count = 0
+let maiorNumero = 0
+let indiceDoNumero = 0
+let vetor = []
+for(let i = 0;i< 5; i++){
+vetor[i] = Number(prompt("Digite um Número"))
+}
+for(let i = 0;i< vetor.length ; i++){
+if(vetor[i] > maiorNumero){
+maiorNumero = vetor[i]
+count = i
+}
+}
+console.log(`O Maior elemento é ${maiorNumero} e a posição ${count}`)
+
+
+
+//3
+
+let maiorNumero = 0
+let menorNumero = 0
+let vetor = []
+for(let i = 0;i< 5; i++){
+vetor[i] = Number(prompt("Digite um Número"))
+}
+for(let i = 0;i< vetor.length ; i++){
+if(vetor[i] > maiorNumero){
+maiorNumero = vetor[i]
+}
+if(!menorNumero || vetor[i] < menorNumero){
+menorNumero = vetor[i]
+}
+}
+console.log(`O menor é ${menorNumero} e o Maior ${maiorNumero}`)
+
+
+//4
+
+let vetor1 = []
+let vetor2 = []
+for (let i = 0; i < 5; i++) {
+vetor1[i] = Number(prompt("Digite um Número"))
+}
+for (let i = vetor1.length; i >=0; i--) {
+vetor2.push(vetor[i])
+}
+console.log("Oprimeiro Vetor é:" + vetor1 +"\ne segundo Vetor é: " + vetor2)
+
+
+//5
+
+vetorAnimais = []
+for(let i = 0; i <=5; i++){
+vetorAnimais[i]= prompt("Digite um animal")
+console.log(vetorAnimais)
+}
+let animaisComparacao = prompt("Digite um animal para comparar")
+let achei
+for(let i = 0; tamanhoVetor = vetorAnimais.length; i < tamanhoVetor, i++){
+if (vetorAnimais[i] === animaisComparacao) {
+achei = true
+break
+}
+}
+achei ? console.log("Achei  o animal") : console.log("NÃO ACHEI")
+
+
+//6
+
+let soma = 0
+vetor1 = []
+for (let i = 0; i < 6; i++) {
+vetor1[i] = Number(prompt("Digite um Número"))
+}
+soma = vetor1[0] + vetor1[1] + vetor1[5]
+console.log("A soma é:" + soma)
+vetor1[4] = 100
+for (let i = 0; i < 6; i++) {
+console.log(`${vetor1}\n`)
+}
 
 
         

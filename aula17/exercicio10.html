@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+"use strict"
+//10)
+
+let ano = +prompt("Digite os anos de sua idade")
+let meses = +prompt("Digite os mesês da sua idade")
+let dias = +prompt("Digite os dias de sua idade")
+let resultado = calcularIdade(ano, meses, dias) 
+function calcularIdade(ano, meses, dias){ 
+let anoDias = (ano * 365) 
+let mesesDias = (meses * 30)  
+let diasResultado =(anoDias + mesesDias + dias) 
+return diasResultado } 
+console.log(`Resultado em dias ${resultado}`)
+
+
+    </script>
+</body>
+</html>

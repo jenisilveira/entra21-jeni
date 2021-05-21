@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+"use strict"
+//9)
+
+/*Escreva uma função que receba dois parâmetros. O primeiro é o elemento que repetirá, enquanto o segundo é
+o número de vezes que haverá a repetição. Um array deve ser retornado
+Exemplo:
+repetirElemento("oi", 3) // ["oi", "oi", "oi"]*/
+
+function repetirElemento(elemento,quantidade){
+    let vetor = []
+    for (let i = 0; i < quantidade; i++) {
+      vetor[i] = elemento       
+    }
+
+    return vetor
+}
+let elemento = prompt("Digite algo")
+let quantidade = +prompt("Digite a quantidade de vezes")
+
+console.log(repetirElemento(elemento,quantidade));
+
+
+    </script>
+</body>
+</html>

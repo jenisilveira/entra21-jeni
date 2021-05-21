@@ -8,28 +8,21 @@
 <body>
     <script>
 "use strict"
+//5)
 
-/* 5) Faça um script que receba a média de um aluno e com a ajuda de uma função que recebe 
-a média por parâmetro retorne o conceito da média conforme a tabela abaixo:
-+----------------+-----------+
-|     Média      |  Conceito |
-+----------------+-----------+
-| de 0.0 à 4.9   |     D     |
-| de 5.0 à 6.9   |     C     |
-| de 7.0 à 8.9   |     B     |
-| de 9.0 à 10.0  |     A     |
-+----------------+-----------+ */
+let mediaAluno = +prompt("Digite a média do aluno")
+let conceitoAluno = calcularConceito(mediaAluno) 
+function calcularConceito(mediaAluno){ 
+    if(mediaAluno >= 0 && mediaAluno <= 4.9){ 
+        return "Conceito é: D" 
+    }else if(mediaAluno >= 5 && mediaAluno <= 6.9){ 
+        return "Conceito é: C" 
+    }else if(mediaAluno >= 7 && mediaAluno <= 8.9){ 
+        return "Conceito é: B" 
+    }else if(mediaAluno >= 9 && mediaAluno <= 10){ 
+        return "Conceito é A" } } 
 
-
-let 
-
-
-
-
-
-
-
-
+ console.log(conceitoAluno)
 
 
 

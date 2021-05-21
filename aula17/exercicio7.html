@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+"use strict"
+//7)
+
+elementoQualquer()  
+function elementoQualquer() { 
+let vetor = [] 
+let numeroMaior = 0 
+let numeroMenor = 0 
+for (let i = 0; i < 20; i++) { 
+vetor[i] = Math.floor(Math.random() * (100 - 1)) + 1; } 
+for (let i = 0; i < vetor.length; i++) { 
+    if (vetor[i] > numeroMaior) { 
+        numeroMaior = vetor[i] } } 
+        numeroMenor = vetor[0] 
+for (let j = 0; j < vetor.length; j++) { 
+    if (vetor[j] < numeroMenor) { 
+        numeroMenor = vetor[j]  } } 
+    
+    console.log(`O maior número é ${numeroMaior} e o menor número é ${numeroMenor}`)  }
+
+
+    </script>
+</body>
+</html>

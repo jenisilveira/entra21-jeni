@@ -10,6 +10,23 @@
 "use strict"
 //12)
 
+elementoQualquer()  
+function elementoQualquer() { 
+let vetor = [] 
+let numeroMaior = 0 
+let numeroMenor = 0 
+for (let i = 0; i < 50; i++) { 
+vetor[i] = Math.floor(Math.random() * (1000 - 1)) + 1; } 
+for (let i = 0; i < vetor.length; i++) { 
+    if (vetor[i] > numeroMaior) { 
+        numeroMaior = vetor[i] } } 
+        numeroMenor = vetor[0] 
+for (let j = 0; j < vetor.length; j++) { 
+    if (vetor[j] < numeroMenor) { 
+        numeroMenor = vetor[j]  } } 
+    
+    console.log(`O maior número é ${numeroMaior} e o menor número é ${numeroMenor}`)  }
+
 
 
     </script>

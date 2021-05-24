@@ -11,6 +11,19 @@
 //13)
 
 
+let ano = +prompt("Digite os anos de sua idade")
+let meses = +prompt("Digite os mesês da sua idade")
+let dias = +prompt("Digite os dias de sua idade")
+let resultado = calcularIdade(ano, meses, dias) 
+
+function calcularIdade(ano, meses, dias){ 
+let anoDias = (ano * 365) 
+let mesesDias = (meses * 30)  
+let diasResultado =(anoDias + mesesDias + dias) 
+    
+    return diasResultado } 
+
+console.log(`Resultado em dias ${resultado}`)
 
 
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let vetor1 = [],
+        vetor2 = []
+
+    for (let i = 0; i < 5; i++) {
+        vetor1[i] = prompt(`Digite o valor da posição ${i + 1} do primeiro vetor`)
+    }
+
+    let interseccao = []
+    for (let i = 0; i < 5; i++) {
+        vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)                
+        
+        for (let j = 0; j < 5; j++) {
+            if (vetor1[j] === vetor2[i]) {                        
+                interseccao.push(vetor1[j])
+                break
+            }
+        }
+    }            
+
+    console.log(`Vetor 1: [${vetor1}]\nVetor 2: [${vetor2}]\nIntersecção: [${interseccao}]`)
+
+
+
+        
+    </script>
+</body>
+</html>

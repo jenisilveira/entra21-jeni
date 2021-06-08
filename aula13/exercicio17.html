@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let vetor = []
+    for (let i = 0; i < 10; i++) {
+        vetor[i] = Math.floor(Math.random() * (11 - 1)) + 1
+    }
+
+    console.log(`Vetor: ${vetor}\n`)   
+    
+    // Bubble sort
+    let ultimoIndiceVetor = vetor.length - 1,
+        trocou
+
+    for (let i = 0; i < ultimoIndiceVetor; i++) {
+        trocou = false
+        for (let j = 0; j < ultimoIndiceVetor; j++) {
+            if (vetor[j] > vetor[j + 1]) {
+                let aux = vetor[j]
+                vetor[j] = vetor[j + 1]
+                vetor[j + 1] = aux
+
+                trocou = true
+            }
+        }
+
+        if (!trocou) break
+    }
+
+    console.log(`Vetor ordenado: ${vetor}`)
+
+
+
+        
+    </script>
+</body>
+</html>

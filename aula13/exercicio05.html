@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let nomes = []
+    for (let i = 0; i < 5; i++) {
+        nomes[i] = prompt("Digite um nome")
+    }
+
+    let nomeProcurado = prompt("Digite o nome desejado")
+
+    let achou
+    for (let i = 0; i < 5; i++) {
+        if (nomes[i] === nomeProcurado) {                    
+            console.log("Achei!")
+            achou = true
+            break
+        }
+    }
+
+    console.log(`Nomes: ${nomes}`)
+    if (!achou) console.log("Não achei!")
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let dadosLancados = [],
+        contadorLancamentos = [0, 0, 0, 0, 0, 0]
+
+    for (let i = 0; i < 100; i++) {
+        dadosLancados[i] = Math.floor(Math.random() * (7 - 1)) + 1
+
+        switch(dadosLancados[i]) {
+            case 1:
+                contadorLancamentos[0]++
+                break
+            case 2:
+                contadorLancamentos[1]++
+                break
+            case 3:
+                contadorLancamentos[2]++
+                break
+            case 4:
+                contadorLancamentos[3]++
+                break
+            case 5:
+                contadorLancamentos[4]++
+                break
+            case 6:
+                contadorLancamentos[5]++
+                break
+        }
+    }
+
+    for (let i = 0; i < 6; i++) {
+        console.log(`Quantidade de vezes que o número ${i + 1} foi lançado: ${contadorLancamentos[i]}`)
+    }            
+
+
+
+
+        
+    </script>
+</body>
+</html>

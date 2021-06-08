@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let numeros = []
+    for (let i = 0; i < 8; i++) {
+        numeros[i] = +prompt("Digite um número")
+    }
+        
+    while (true) {
+        x = +prompt("Digite o valor de X")                
+
+        if (x >= 0 && x < 8) break
+
+        alert("Valor inválido digite novamente")
+    }            
+
+    while (true) {
+        y = +prompt("Digite o valor de Y")                
+
+        if (y >= 0 && y < 8) break
+
+        alert("Valor inválido digite novamente")
+    }
+
+    let soma = numeros[x] + numeros[y]
+    console.log(`Vetor: ${numeros}`)
+    console.log(`A soma de ${numeros[x]} e ${numeros[y]} é: ${soma}`)
+
+
+    </script>
+</body>
+</html>

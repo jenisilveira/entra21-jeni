@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let vetor1 = [],
+        vetor2 = []
+
+    for (let i = 0; i < 5; i++) {
+        vetor1[i] = prompt(`Digite o valor da posição ${i + 1} do primeiro vetor`)
+    }
+
+    let iguais = true
+    for (let i = 0; i < 5; i++) {
+        vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)
+
+        if (vetor1[i] != vetor2[i]) iguais = false
+    }            
+
+    console.log(`Vetor 1: ${vetor1}\nVetor 2: ${vetor2}`)
+    iguais ? console.log("Os vetores são iguais") : console.log("Os vetores são diferentes")
+
+
+
+        
+    </script>
+</body>
+</html>

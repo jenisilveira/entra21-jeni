@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let vetor = [],
+        quantidadeNegativos = 0,
+        somaPositivos = 0
+
+    for (let i = 0; i < 10; i++) {
+        vetor[i] = +prompt("Digite um valor")
+
+        if (vetor[i] < 0) {
+            quantidadeNegativos++
+        } else {
+            somaPositivos += vetor[i]
+        }
+    }
+
+    console.log(`Vetor: ${vetor}`)
+    console.log(`Quantidade de elementos negativos digitados: ${quantidadeNegativos}`)
+    console.log(`Soma dos elementos positivos: ${somaPositivos}`)
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -10,21 +10,30 @@
 "use strict"
 //11)
 
-/*11) Faça uma função que receba um array de 5 elementos. Modifique o vetor[1] = 10 e vetor[2] = 30 e retorne o vetor modificado. 
-Ao final mostre na tela o vetor original e o vetor modificado.*/
+function ehPerfeito(numero) {
+                let divisores = obtemDivisores(numero)
 
+                let somaDivisores = 0
+                for (let divisor of divisores) {
+                    somaDivisores += divisor
+                }
 
-function receberArray(elemento5,elementoModificado) {
-    let vetor1 = []
-    
-    
-   
-    
-}
+                return somaDivisores === numero
+            }
 
+            function obtemDivisores(numero) {
+                let divisores = []
 
+                for (let i = 1; i < numero; i++) {
+                    if (numero % i === 0) divisores.push(i)
+                }
 
+                return divisores
+            }
 
+            let numero = +prompt("Digite um número")
+            console.log(ehPerfeito(numero))
+        
 
 
     </script>

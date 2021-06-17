@@ -1,0 +1,22 @@
+#main {
+    background-color: #FFFFFF;
+}
+
+#header {
+    padding: 96px 64px 48px;
+    text-align: center;
+}
+
+#header h1 {
+    color: #FFFFFF;
+    font: 73.6667px "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 18.417px;
+}
+
+#header p {
+color: #FFFFFFA6;
+font: 28.3333px "Source Sans Pro", sans-serif;
+
+
+}

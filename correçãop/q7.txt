@@ -1,0 +1,19 @@
+let numero1 = Number(prompt("Digite o primeiro número:"));
+let numero2 = Number(prompt("Digite o primeiro número:"));
+let numero3 = Number(prompt("Digite o primeiro número:"));
+
+if (numero1 > numero2 && numero1 > numero 3){
+    console.log (numero1)
+}
+
+else if (numero2 > numero1 && numero2 > numero3){
+     console.log(numero2)
+}
+
+else {
+    console.log(numero3)
+
+}
+
+
+

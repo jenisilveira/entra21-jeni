@@ -1,0 +1,22 @@
+let peso = Number(prompt("Informe a seu peso:"))
+let altura = Number(prompt("Informe a sua altura:"))      
+let resultado = 2 / (altura * altura)
+
+if (resultado < 18,5){
+            console.log("Abaixo do peso");
+}else if (resultado > 25)
+    console.log("Peso Normal)
+
+}else if (resultado < 30){
+    console.log("Acima do peso")
+
+}else 
+    console.log("Obeso")
+
+
+
+
+
+
+
+

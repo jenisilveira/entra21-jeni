@@ -1,0 +1,7 @@
+ let valor = Number(prompt("Digite um valor:"));
+
+        if (valor >= 20 && valor <= 50 ) {
+            console.log("O número está no intervalo entre 20 e 50");
+         } else {
+            console.log("O número está fora do intervalo");
+            }

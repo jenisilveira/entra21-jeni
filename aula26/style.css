@@ -46,8 +46,8 @@ div.p {
 }
 
 ul {
-    width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */
-    height:100%;        /* aqui foi feito pra fins de demonstração apenas.                     */
+    width:100%;         
+    height:100%;        
     list-style-type: none;
     font: 18.6667px "Source Sans Pro";
 }

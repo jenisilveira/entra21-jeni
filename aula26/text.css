@@ -17,6 +17,12 @@
 #header p {
 color: #FFFFFFA6;
 font: 28.3333px "Source Sans Pro", sans-serif;
-
-
+margin-top: opx;
+margin-bottom: 56.6667px;
 }
+.link{
+color: #FFFFFFA6;
+text-decoration: none;
+border-bottom: 1px dotted;
+
+}    

@@ -28,8 +28,26 @@ border-bottom: 1px dotted;
 
 #nav{
 background-color: #F7F7F7;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border: 5px solid #F7F7F7;
+color: #636363;    
+font: 22.6667px "Source Sans Pro", sans-serif;
+padding: 22.6667px;
 
+}
 
+#nav ul{
+display: flex;    
+margin: Opx;
+padding: Opx;
+justify-content: center;
+
+}
+
+nav a{
+text-decoration: none;
+font: 22.6667px "Source Sans Pro", sans-serif; 
 
 }
 

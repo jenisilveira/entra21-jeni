@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<<<<<<< HEAD
     <head>
         <meta charset="utf-8"/>
         <title>Form validation: Tarefa 1</title>
@@ -32,7 +31,7 @@
             </li>
             <li>
                 <label for="phone">Telefone:</label>
-                <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone" pattern=()>
             </li>
             <li>
                 <label for="comment">Comentário:</label>
@@ -66,62 +65,4 @@
         */
     </script>
   </body>
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 01</title>
-</head>
-<style>
-
-
-
-
-</style>
-<body>
-
-    <script>
-/*
-1) Crie uma <div> que se torne em uma <textarea> quando clicada.
-A <textarea> permite editar o HTML da <div>. Quando o usuário pressionar Enter ou sair da <textarea>, ela
-volta a ser uma <div> com o conteúdo alterado na <textarea>
-*/
-    const div = document.querySelector("div")
-
-    div.addEventListener("click", () => {
-
-// 1.criar uma textarea
-const textarea = document.createElement("textarea")
-//2.atribuir o innerHTML da div no value da textarea
-textarea.value = div.innerHTML 
-//3.adicionar o evento de blur na textarea 
-  //->adicionar o value da text area para o innerHTML a div
-    textarea.addEventListener("blur", () => {
-    div.innerHTML = textarea.value
-  //->substituir a textarea pela div (replaceWiith())  
-    textarea.replaceWith(div)
-})
-/*4.adicionar o evento Keydown na textarea para verificar quando
-o Enter é pressionado.*/
-textarea.addEventListener("keydown", (event) => {
-    if(event.key === "Enter")
-        textarea.blur()
-})
-//5.substituir a div pela textarea
-
-
-
-
-
-
-
-
-    })
-
-
-
-
-    </script>
-</body>
->>>>>>> c9bf2362d4115e3d32f100401edf43869b26df6e
 </html>

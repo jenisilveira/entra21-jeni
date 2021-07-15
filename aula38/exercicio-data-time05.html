@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+    5) Crie uma função segundosParaAmanha() que retorna o número de segundos
+    até o próximo dia.
+
+       Exemplo: 23:00 -> segundosParaAmanha() == 3600
+
+*/
+
+
+function obtemSegundos() {
+        let hoje = new Date ()
+        let hojeDiff = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate())
+        let diff = hoje - hojeDiff
+        return Math.round(diff / 1000)    
+    }
+
+ obtemSegundos();
+
+
+
+function segundosParaAmanha() {
+    let = segundosPassados - obtemSegundos(new Date())
+
+    return 
+}
+
+console.log(segundosParaAmanha());
+
+
+
+    </script>
+</body>
+</html>

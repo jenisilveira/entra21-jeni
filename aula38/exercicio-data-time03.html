@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+    3) Crie uma função obtemUltimoDiaMes(ano, mes) que retorna o último dia do mês.
+
+       Parâmetros: 
+       ano -> 2012
+       mes -> de 0 a 11
+
+    Exemplo: obtemUltimoDiaMes(2012, 1) = 29
+*/
+
+let ano = 2012,
+    mes = 2
+
+function obtemUltimoDiaMes(ano, mes) {
+    let data = new Date(ano, mes + 1, 0).getDate()
+    console.log(data)
+}
+
+console.log(obtemUltimoDiaMes());
+
+    </script>
+</body>
+</html>
